@@ -6,7 +6,7 @@
 /*   By: rpunet <rpunet@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/12 13:30:53 by rpunet            #+#    #+#             */
-/*   Updated: 2021/01/12 15:48:30 by rpunet           ###   ########.fr       */
+/*   Updated: 2021/01/12 19:26:04 by rpunet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,16 @@
 
 # include "Brain.hpp"
 
-
-
 class Human
 {
 	private:
-		Brain	_brain;
+		const Brain	_brain;
 	public:
 		Human();
 		~Human();
 
-	std::string	identify(void);
-	Brain		&getBrain(void);
+	std::string	identify(void) const;
+	const Brain		&getBrain(void) const;
 };
 
 #endif

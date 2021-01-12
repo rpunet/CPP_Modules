@@ -6,7 +6,7 @@
 /*   By: rpunet <rpunet@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/12 13:33:07 by rpunet            #+#    #+#             */
-/*   Updated: 2021/01/12 15:48:41 by rpunet           ###   ########.fr       */
+/*   Updated: 2021/01/12 19:27:36 by rpunet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@ Human::~Human()
 {
 }
 
-std::string	Human::identify(void)
+std::string	Human::identify(void) const
 {
 	return (this->_brain.identify());
 }
 
-Brain		&Human::getBrain(void)
+const Brain		&Human::getBrain(void) const
 {
 	return (this->_brain);
 }

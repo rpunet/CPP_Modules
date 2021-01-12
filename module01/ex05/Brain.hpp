@@ -6,7 +6,7 @@
 /*   By: rpunet <rpunet@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/12 13:25:26 by rpunet            #+#    #+#             */
-/*   Updated: 2021/01/12 15:46:40 by rpunet           ###   ########.fr       */
+/*   Updated: 2021/01/12 19:26:04 by rpunet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Brain
 		Brain();
 		~Brain();
 
-	std::string	identify(void);
+	std::string	identify(void) const;
 };
 
 #endif
