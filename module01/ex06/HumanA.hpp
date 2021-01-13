@@ -6,7 +6,7 @@
 /*   By: rpunet <rpunet@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/12 20:00:54 by rpunet            #+#    #+#             */
-/*   Updated: 2021/01/12 21:23:01 by rpunet           ###   ########.fr       */
+/*   Updated: 2021/01/13 11:12:29 by rpunet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@
 class HumanA
 {
 	private:
-		std::string	_name;
-		Weapon		&_weapon;
+		std::string const	_name;
+		Weapon				&_weapon;
 
 	public:
-		HumanA(std::string name, Weapon &weapon);
+		HumanA(std::string const &name, Weapon &weapon);
 		~HumanA();
 
-		void		attack();
+		void		attack() const;
 };
 
 #endif

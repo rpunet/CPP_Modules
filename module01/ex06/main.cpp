@@ -26,7 +26,7 @@ int	main()
 	{
 		Weapon	club = Weapon("Crude spiked club");
 
-		HumanB	jim("Jim");
+		HumanB	jim("Jim"); // HumanB class doesnt initialize the weapon, thus it must be pointer type
 		jim.setWeapon(club);
 		jim.attack();
 		club.setType("some other type of club");

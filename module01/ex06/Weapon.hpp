@@ -6,7 +6,7 @@
 /*   By: rpunet <rpunet@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/12 19:31:30 by rpunet            #+#    #+#             */
-/*   Updated: 2021/01/12 21:44:35 by rpunet           ###   ########.fr       */
+/*   Updated: 2021/01/13 10:53:22 by rpunet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ class Weapon
 	private:
 		std::string	type;
 	public:
-		Weapon(std::string typer);
+		Weapon(std::string const &typer);
 		~Weapon();
 
-		const std::string	&getType();
+		std::string const	&getType() const;
 		void				setType(std::string const &setter);
 };
 
